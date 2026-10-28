@@ -1,0 +1,42 @@
+body{
+    background-color: #ccc;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.choiceBtn{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.results{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.resultScore{
+    margin-left: .1rem;
+    font-size: 16px;
+    color: #333;
+}
+
+.resultSelection{
+opacity: .5;
+}
+
+.resultSelection.winner{
+opacity: 1;
+font-size: 30px;
+}
